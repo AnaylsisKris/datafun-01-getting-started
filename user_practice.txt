@@ -19,3 +19,218 @@ hello
 >>> print( min (a, b))
 3
 >>> 
+Last login: Sat Jan 14 12:15:48 on ttys000
+(base) kristenfinley@Kristens-MacBook-Pro ~ % ipython 
+Python 3.9.12 (main, Apr  5 2022, 01:53:17) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.2.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: 45+ 72
+Out[1]: 117
+
+In [2]: x = 7
+
+In [3]: y = 3
+
+In [4]: x + y
+Out[4]: 10
+
+In [5]: total = x + y
+
+In [6]: total
+Out[6]: 10
+
+In [7]: type(x)
+Out[7]: int
+
+In [8]: type(10.5)
+Out[8]: float
+
+In [9]: total = 10.8 + 12.2 + 0.2
+
+In [10]: toatl
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Input In [10], in <cell line: 1>()
+----> 1 toatl
+
+NameError: name 'toatl' is not defined
+
+In [11]: total
+Out[11]: 23.2
+
+In [12]: 7 * 4
+Out[12]: 28
+
+In [13]: 2 ** 10
+Out[13]: 1024
+
+In [14]: 9 ** (1/2)
+Out[14]: 3.0
+
+In [15]: 7/4
+Out[15]: 1.75
+
+In [16]: 7//4
+Out[16]: 1
+
+In [17]: 3//5
+Out[17]: 0
+
+In [18]: 14//7
+Out[18]: 2
+
+In [19]: -13/4
+Out[19]: -3.25
+
+In [20]: -13//4
+Out[20]: -4
+
+In [21]: 123/0
+---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
+Input In [21], in <cell line: 1>()
+----> 1 123/0
+
+ZeroDivisionError: division by zero
+
+In [22]: z + 7
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Input In [22], in <cell line: 1>()
+----> 1 z + 7
+
+NameError: name 'z' is not defined
+
+In [23]: 17 % 5
+Out[23]: 2
+
+In [24]: 7.5 % 3.5
+Out[24]: 0.5
+
+In [25]: 10 * (5 + 3)
+Out[25]: 80
+
+In [26]: 10 * 5 + 3
+Out[26]: 53
+
+In [27]: 3 * (4 - 5)
+Out[27]: -3
+
+In [28]: 3 * 4 - 5
+Out[28]: 7
+
+In [29]: 4 ** 3 ** 2
+Out[29]: 262144
+
+In [30]: (4 ** 3) ** 2
+Out[30]: 4096
+
+In [31]: 4 ** (3 ** 2)
+Out[31]: 262144
+
+In [32]: print('Welcome to Python!')
+Welcome to Python!
+
+In [33]: print("Welcome to Python!")
+Welcome to Python!
+
+In [34]: print('Welcome\nto\n\nPython!')
+Welcome
+to
+
+Python!
+
+In [35]: print('this is a longer string, so we \
+    ...: split it over two lines')
+this is a longer string, so we split it over two lines
+
+In [36]: print(Sum is', 7 + 3)
+  Input In [36]
+    print(Sum is', 7 + 3)
+                         ^
+SyntaxError: EOL while scanning string literal
+
+
+In [37]: print('Sum is', 7 + 3)
+Sum is 10
+
+In [38]: type('word')
+Out[38]: str
+
+In [39]: triple_quoted_string = """This is a triple-quoted
+    ...: string that spans two lines"""
+
+In [40]: print(triple_quoted_string)
+This is a triple-quoted
+string that spans two lines
+
+In [41]: triple_quoted_string
+Out[41]: 'This is a triple-quoted\nstring that spans two lines'
+
+In [42]: print("""This is a lengthy
+    ...:     multiline string containing
+    ...: a few lines\
+    ...: of text""")
+This is a lengthy
+    multiline string containing
+a few linesof text
+
+In [43]: name = input("What's your name? ")
+What's your name? Kristen
+
+In [44]: name
+Out[44]: 'Kristen'
+
+In [45]: print(name)
+Kristen
+
+In [46]: name = input("What's your name? ")
+What's your name? 'Kristen'
+
+In [47]: name
+Out[47]: "'Kristen'"
+
+In [48]: print(name)
+'Kristen'
+
+In [49]: value1 = input('Enter first number: ')
+Enter first number: 7
+
+In [50]: value2 = input('Enter second number: ')
+Enter second number: 3
+
+In [51]: value1 + value2
+Out[51]: '73'
+
+In [52]: value = input('Enter an integer: ')
+Enter an integer: 7
+
+In [53]: value = int(value)
+
+In [54]: value
+Out[54]: 7
+
+In [55]: another_value = int(input('another_value: '))
+another_value: 13
+
+In [56]: another_value
+Out[56]: 13
+
+In [57]: value + another_value
+Out[57]: 20
+
+In [58]: bad_value = int(input('Enter another integer: '))
+Enter another integer: hello
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+Input In [58], in <cell line: 1>()
+----> 1 bad_value = int(input('Enter another integer: '))
+
+ValueError: invalid literal for int() with base 10: 'hello'
+
+In [59]: int(10.5)
+Out[59]: 10
+
+In [60]: float('6.2') * 3.3
+Out[60]: 20.46

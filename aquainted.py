@@ -23,6 +23,7 @@ print("Greetings!")
 
 # get input from the user
 name = input("What is your name?: ")
+name = type(str)
 
 # use what you got
 print("Hello " + name.capitalize() + "!")
