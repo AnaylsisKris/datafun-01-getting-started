@@ -10,17 +10,18 @@ print()
 print('Hello Python World!')
 print()
 print('This is my first time writing code!')
+print()
 print("I've learned more in past week, than I have in the past year; and I'm LOVING the challenge!")
+print()
 print("The domain I chose for this class is 'Baseball'") 
+print()
 print("I will be using that topic to show off what I've learned so far.")
 print()
 print("Well, enough about me; let's talk about you")
 name = input("What is your name?: ")
-print("Hello " + name.capitalize() + "!")
-print()
-print("Thank you for reading my code " + name.capitalize() + "!")
 print()
 print()
+print("Hello " + name.capitalize() + "! Thank you for reading my code!")
 print("=============================================================")
 print()
 print("Let me show you some of the functions I've learned from the Python Standard Library")
@@ -60,25 +61,32 @@ stdev = statistics.stdev(stl_avg)
 lowest = min(stl_avg)
 highest = max(stl_avg)
 
-# using variable colon formatting to avoid unnecessary digits (e.g. .3f)
+# using variable colon formatting to avoid unnecessary digits (e.g. .3f).
+print()
+print()
 print(f"Here's some St. Louis Cardinals 2022 batting average data: {stl_avg}")
 print()
 print("Here's how the Redbirds batted last year:")
 print(f"   mean={mean:.3f}")
 print(f"   median={median:.3f}")
 print(f"   mode={mode:.3f}")
+print(f"   lowest={lowest: .3f}")
+print(f"   highest={highest: .3f}")
+print(f"   range=({lowest: .3f} - {highest: .3f})")
 print()
 print("Descriptive statistics include measures of spread:")
 print(f"   var={var:.3f}")
 print(f"   stddev={stdev:.3f}")
+print("The %RSD is another helpful statistic to assess variability")
+print(f"   %RSD={float(stdev/mean*100)}%")
 print()
 print()
 print()
 
-games_per_team =  162
-teams_per_division =  15
-number_of_divisions =  2
-
+games_per_team =  int(162)
+teams_per_division =  int(15)
+number_of_divisions =  int(2)
+total_games = games_per_team * teams_per_division * number_of_divisions
 
 response = input("Would you like to see how I can assign variables? (y/n)")
 
@@ -87,14 +95,13 @@ if response == "y":
     print("Great! I'm going to use f'strings to show you the variables I've assigned in my code.")
     print()
     print("Let's see how many baseball games we can theoretically watch per year...")
-    print(f"The total number of games each MLB team plays per season is={games_per_team}.")
-    print(f"There are={teams_per_division} teams per division.")
-    print(f"The MLB has={number_of_divisions} divisions, which are the National and the American Leagues")
-    print(f"That means the number of games I get to watch each season is={games_per_team}*{teams_per_division}*{number_of_divisions}!")
+    print(f"The total number of games each MLB team plays per season is {games_per_team}.")
+    print(f"There are {teams_per_division} teams per division.")
+    print(f"The MLB has {number_of_divisions} divisions, which are the National and the American Leagues")
+    print(f"That means the number of games I get to watch each season is {total_games}!")
     print()
     print("That's a lot of baseball to watch!")
     print()
-
 if response == "n":
     print()
     response = input("Are you sure? I worked so hard on this code! (y/n)")
@@ -107,8 +114,8 @@ if response == "n":
         if response == "n":
             print()
             print("That's ok, I'm still learning a lot and having tons of fun.")
-            #When I fun the code it continues to the next line after this. Is there a way to just have to script stop when the prompts end up here?
-
+            print()
+#If the selection is n, it does show this correct response, but it also moves on to show an earlier response. How do i fix this?
     if response == "n":
         print()
         print("Great! I'm glad you changed your mind. I'm going to use f'strings to show you the variables I've assigned in my code.")
@@ -117,11 +124,13 @@ if response == "n":
         print(f"The total number of games each MLB team plays per season is={games_per_team}.")
         print(f"There are={teams_per_division} teams per division.")
         print(f"The MLB has={number_of_divisions} divisions, which are the National and the American Leagues")
-        print(f"That means the number of games I get to watch each season is={games_per_team}*{teams_per_division}*{number_of_divisions}!")
+        print(f"That means the number of games I get to watch each season is {total_games}!")
         print()
         print("That's a lot of baseball to watch!")
         print()
 
 print()
 print()
-print("That was fun!")
+print("That was fun! Have a great day.")
+print()
+print()
